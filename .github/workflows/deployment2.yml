@@ -1,0 +1,12 @@
+name: deployment2
+on: issues
+jobs: 
+  output:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3
+      - name: install dependencies
+        run: npm ci
+      - name: get output
+        run: echo "${{ toJSON(github)}}"

@@ -1,4 +1,4 @@
-name: deployment2
+name: deployment-test
 on: issues
 jobs: 
   output:
